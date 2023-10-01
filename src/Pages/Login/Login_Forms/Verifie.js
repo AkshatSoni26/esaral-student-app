@@ -148,7 +148,7 @@ const Verifie = () => {
         !otp ?
           <PhoneNumber PhoneRef={PhoneRef} OTPSender={OTPSender} warn={warn} />
           :
-          <OTPGenrator setOtp={setOtp} warn={warn} OTP={OTP} number={number} setWarn={setWarn} />
+          <OTPGenrator setOtp={setOtp} setOTP={setOTP} warn={warn} OTP={OTP} number={number} setWarn={setWarn} />
       }
     </div>
   );
