@@ -1,0 +1,11 @@
+/* .focused_input, .focused_input:focus
+{
+    border: 2px solid var(--primary-color);
+  outline: none;
+
+    border-radius: 8px;
+    padding: 2%;
+    width: 300px;
+
+    /* margin-left: 10%; */
+/* } */

@@ -1,0 +1,113 @@
+/*--------------------------------Phone View------------------------------------------*/
+
+@media screen and (max-width:480px) {
+
+    .CountryAndPhoneNumber {
+        display: flex;
+        width: 98%;
+    }
+
+    .countryCode {
+        display: flex;
+        border: 2px solid var(--primary-color);
+        border-radius: 8px;
+        padding: 2%;
+        border-right: 0px;
+        border-radius: 8px 0px 0px 8px;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+    }
+
+    .focused_input,
+    .focused_input:focus {
+        border: 2px solid var(--primary-color);
+        border-radius: 8px;
+        margin-left: 0%;
+        padding: 2%;
+        width: 100%;
+        /* margin-left: 10%; */
+    }
+
+    .phoneNumberInput,
+    .phoneNumberInput:focus {
+        width: 100%;
+        border-left: 0px;
+        /* top-left | top-right | bottom-right | bottom-left */
+        border-radius: 0px 8px 8px 0px;
+    }
+
+}
+
+
+/*--------------------------------Tab View------------------------------------------*/
+
+@media screen and (min-width: 481px) and (max-width: 720px) {
+
+    .focused_input,
+    .focused_input:focus {
+        border: 2px solid var(--primary-color);
+        outline: none;
+
+        border-radius: 8px;
+        padding: 2%;
+        width: 300px;
+
+        /* margin-left: 10%; */
+    }
+
+    .phoneNumberInput, .phoneNumberInput:focus {
+        /* background-color: var(--Primary-Background-Color); */
+        border-left: 0px;
+        /* top-left | top-right | bottom-right | bottom-left */
+        border-radius: 0px 8px 8px 0px;
+      }
+      
+}
+
+
+.CountryAndPhoneNumber {
+    display: inline-flex;
+    /* display: 'inline-flex'; */
+}
+
+.countryCode {
+    display: flex;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 2%;
+    border-right: 0px;
+    border-radius: 8px 0px 0px 8px;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.FlagClass {
+    width: 2em;
+    height: auto;
+    padding-left: 8%
+}
+
+.focused_input, .focused_input:focus {
+    border: 2px solid var(--primary-color);
+    outline: none;
+    /* border: 0px;
+  outline: none; */
+
+    border-radius: 8px;
+    padding: 2%;
+    width: 315px;
+    /* margin-left: 10%; */
+
+    background-color: var(--Primary-Background-Color);
+}
+
+.phoneNumberInput,
+.phoneNumberInput:focus {
+  /* background-color: var(--Primary-Background-Color); */
+  border-left: 0px;
+  /* top-left | top-right | bottom-right | bottom-left */
+  border-radius: 0px 8px 8px 0px;
+  font-size: 17px;
+}

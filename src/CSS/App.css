@@ -1,0 +1,310 @@
+/*------------------------------------------------------CSS Reset---------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*------------------------------------------------------CSS Variables---------------------------------------------------- */
+:root {
+  --Primary-Font-Family: 'Lato', sans-serif;
+  --Primary-Background-Color: #F8F8F8;
+  --primary-color: #5F46E3;
+  --second-primary-color: #fff;
+  --ChaptePageButtons-color: #333A47;
+  --error-color: #CC2C2C;
+  --text-color: #0D1015;
+  --SubjectIndexTab-color: #060D21;
+  --Form-heading1: #0D1015;
+  --Form-heading2: #0D1015;
+  --Form-heading3: #333A47;
+
+
+  --warning-font-color: #CC2C2C;
+
+  --Form-heading-font-size: 32px;
+  --Form-heading1-font-size: 24px;
+  --Form-heading2-font-size: 16px;
+  --Form-heading3-font-size: 14px;
+  --Form-heading4-font-size: 12px;
+}
+
+
+/*------------------------------------------------------CSS main Tags---------------------------------------------------- */
+body {
+  font-family: var(--Primary-Font-Family);
+  background-color: var(--Primary-Background-Color);
+  height: 100%;
+  width: 100%;
+  user-select: none;
+}
+
+img {
+  user-drag: none;
+  -moz-user-drag: none;
+  -webkit-user-drag: none;
+}
+
+/*-------------------------------------------------------Grid Template------------------------------------------------*/
+.grid-container {
+  display: grid;
+  grid-template: 'side content';
+  /* grid-template-columns: auto auto auto auto auto auto auto auto; */
+  grid-gap: 10px;
+}
+
+
+/*----------------------------------------------------------Login-----------------------------------------------------*/
+.login {
+  background-color: var(--second-primary-color);
+  display: grid;
+  grid-template: 'side content';
+  grid-template-columns: 50% 50%;
+
+}
+
+.login-caursal {
+  width: 50vw;
+  /* height: 100vh; */
+  grid-area: side;
+}
+
+.login-info {
+  /* width: 50vw; */
+  /* height: 100vh; */
+  grid-area: content;
+  margin: 10%;
+}
+
+.Form {
+  margin-left: 12%;
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* .Form-text{
+  display: flex;
+  flex-direction: column;
+  height: 48%;
+  justify-content: space-around;
+} */
+
+.Form-button {
+  width: 313.844px;
+  height: 4%;
+}
+
+.Form-heading1 {
+  font-family: Lato;
+  font-size: var(--Form-heading1-font-size);
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--Form-heading1);
+}
+
+.Form-heading2 {
+  font-family: Lato;
+  font-size: var(--Form-heading2-font-size);
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: var(--Form-heading3);
+}
+
+.Form-heading3 {
+  font-family: Lato;
+  font-size: var(--Form-heading3-font-size);
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--Form-heading3);
+}
+
+.Form-heading4 {
+  font-family: Lato;
+  font-size: var(--Form-heading4-font-size);
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: var(--Form-heading3);
+}
+
+.Form-phone {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Form-text-input {
+  height: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Form-input {
+  height: 44%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Form-text {
+  height: 16%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Form-but {
+  width: 354.844px;
+}
+
+/*----------------------------------------------------OTP-Box--------------------------------------------------- */
+
+.Otp_Box {
+  border: 0px solid var(--primary-color);
+  background-color: var(--Primary-Background-Color);
+  border-radius: 7px;
+  flex: 1 1;
+  aspect-ratio: 1;
+  margin: 5%;
+  margin-left: 0%;
+}
+
+.Otp_Box:focus {
+  background-color: var(--Primary-Background-Color);
+  border: 2px solid var(--primary-color);
+  outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.otp-links {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  cursor: pointer;
+}
+
+.otp-form-class {
+  justify-content: space-around;
+  height: 72%;
+}
+
+
+/*----------------------------------------------------Name--------------------------------------------------- */
+.Name-heading3 {
+  font-family: Lato;
+  font-size: var(--Form-heading2-font-size);
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--Form-heading3);
+}
+
+.Name-Button {
+  width: 274px;
+  height: 3%;
+}
+
+/*---------------------------------------------------- Attempt-Year --------------------------------------------------- */
+.Year-heading {
+  font-family: Lato;
+  font-size: var(--Form-heading-font-size);
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--Form-heading1);
+}
+
+.Form-lottie {
+  margin-top: -10%;
+  width: 20vw;
+  height: 34vh;
+}
+
+.Year-Button {
+  width: 150px;
+  height: 64px;
+  top: 380px;
+  left: 20px;
+  border-radius: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 15px;
+}
+
+.grid-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*---------------------------------------------------- Exam --------------------------------------------------- */
+
+.Exam-Button {
+  width: 150px;
+  height: 110px;
+  top: 335px;
+  left: 20px;
+  border-radius: 15px;
+}
+
+.Exam-item {
+  margin-left: 10%;
+}
+
+.Exam-tag_line {
+  font-family: Lato;
+  font-size: var(--Form-heading4-font-size);
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.Exam-target_name {
+  font-family: Lato;
+  font-size: var(--Form-heading2-font-size);
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/*----------------------------------------------------Utility--------------------------------------------------- */
+
+.pseudo-button {
+  cursor: pointer;
+}
+
+.warning {
+  color: var(--error-color);
+  display: flex;
+  align-items: center;
+}

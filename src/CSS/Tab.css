@@ -1,0 +1,37 @@
+/*------------------------------------------------------Tab View------------------------------------------------------*/
+
+@media screen and (min-width: 481px) and (max-width: 720px) {
+    
+    /*------------------------------------------------Login-----------------------------------------------*/
+    .login {
+        background-color: var(--second-primary-color);
+        display: grid;
+        grid-template: 'side content';
+        grid-template-columns: 0% 100%;
+    }
+    .login-caursal{
+        display: none;
+    }
+
+    .login-info {
+        width: 84vw;
+        height: 100vh;
+        grid-area: content;
+        margin:0%
+    }
+
+    .Form-phone {
+        margin: 10% 0% 8% 0%;
+    }
+
+/*---------------------------------------------------- Attempt-Year --------------------------------------------------- */
+    .Form-lottie {
+        margin-top: -12%;
+        width: 48vw;
+        height: 36vh;
+    }
+    .Attempt-year-Form{
+        height: 80%;
+    }
+    
+}

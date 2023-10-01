@@ -1,0 +1,35 @@
+
+.caursal-main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.caursal {
+    height: 100vh;
+    width: 100vw;
+    margin: 0% 35%;
+}
+
+.caursal .caursal-anim {
+    /* animation: caursal-animation 5s infinite;
+    animation-fill-mode: forwards; */
+    transform: translateX(100%) 2s;
+}
+
+.caursal img{
+    height: 50%;
+    width: 50%;
+}
+
+.caursal-heading-layout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    word-wrap: break-word;
+    width: 50%;
+}

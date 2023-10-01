@@ -1,0 +1,55 @@
+/*------------------------------------------------------Phone View----------------------------------------------------*/
+
+@media screen and (max-width:480px) {
+
+    /*------------------------------------------------Login-----------------------------------------------*/
+    .login {
+        background-color: var(--second-primary-color);
+        display: grid;
+        grid-template: 'side content';
+        grid-template-columns: 0% 100%;
+        grid-template-rows: 100vh;
+    }
+
+    .login-caursal {
+        display: none;
+    }
+
+    .login-info {
+        /* width: 84vw; */
+        /* height: 100vh; */
+        grid-area: content;
+        margin: 4% 0% 0% 8%;
+        /* margin-left: 8%; */
+    }
+ 
+
+    .Form {
+        margin-left: 0%;
+        height: 78vh;
+    }
+
+    .Form-text-input {
+        width: 100%;
+    }
+
+    .Form-phone {
+        /* justify-content: space-around; */
+    }
+    .Form-input{
+        width: 100%;
+    }
+
+    .Form-button {
+        width: 78%;
+        height: 3%;
+    }
+/*---------------------------------------------------- Attempt-Year --------------------------------------------------- */
+    .Form-lottie{
+        width: 84vw;
+    }
+
+    .grid-container{
+        height: 17%;
+    }
+}
