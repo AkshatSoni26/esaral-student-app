@@ -27,6 +27,7 @@
   --Form-heading2-font-size: 16px;
   --Form-heading3-font-size: 14px;
   --Form-heading4-font-size: 12px;
+  --Form-heading5-font-size: 18px;
 }
 
 
@@ -83,13 +84,6 @@ img {
   flex-direction: column;
   justify-content: space-between;
 }
-
-/* .Form-text{
-  display: flex;
-  flex-direction: column;
-  height: 48%;
-  justify-content: space-around;
-} */
 
 .Form-button {
   width: 313.844px;
@@ -297,6 +291,321 @@ input[type=number] {
   text-align: left;
 }
 
+
+/*----------------------------------------------------Home--------------------------------------------------- */
+.Home-menu {}
+
+.Home-item-style {
+  font-family: Lato;
+  font-size: var(--Form-heading2-font-size);
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--Form-heading2);
+
+}
+
+.Home-menu-item {
+  position: relative;
+  margin-top: 40px;
+}
+
+.menu-item {
+  display: flex;
+  width: 260px;
+  height: 48px;
+  padding: 0px 0px 0px 20px;
+  align-items: center;
+}
+
+.menu-item-active {
+  background-color: var(--Primary-Background-Color);
+  color: var(--primary-color);
+  border-radius: 0px 32px 32px 0px;
+}
+
+.item-active-color {
+  color: var(--primary-color);
+}
+
+.item-color {
+  color: var(--Form-heading3);
+}
+
+.active-item {
+  position: relative;
+  background-color: var(--primary-color);
+  z-index: 1;
+  width: 4px;
+  margin-right: 20px;
+  margin-left: -20px;
+  height: 100%;
+}
+
+
+.Home-NavBar>.menu {
+  display: none;
+}
+
+.Home-content {}
+
+.Home-NavBar {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Home-content,
+.Home-menu,
+.Home-NavBar {
+  background-color: var(--second-primary-color);
+}
+
+
+.Home-NavBar-Menu {
+  display: none;
+  /* transform: scaleX(-1) */
+}
+
+.Home-Name {
+  color: var(--Form-heading2);
+  font-family: Lato;
+  font-size: var(--Form-heading2-font-size);
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.Home-Name-subtitle {
+  font-family: Lato;
+  font-size: var(--Form-heading3-font-size);
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--Form-heading3)
+}
+
+/*------------------------------ HomeSubjectButtons ---------------------------- */
+
+.common-margin {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.Home-Name-Part {
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.HomeSubjectButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Subject-Button {
+  width: 150px;
+  height: 135px;
+  border-radius: 16px;
+
+  background-color: rgb(229, 248, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 2% 0%;
+}
+
+.Subject-Button-img {
+  width: 38.33px;
+  height: 38.33px;
+}
+
+.subject-button-padding {
+  padding-left: 10%;
+}
+
+.subject-button-progress {
+  color: var(--Form-heading2);
+  font-family: Lato;
+  font-size: var(--Form-heading4-font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Progress-bar {
+  position: relative;
+  width: 118px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  background: rgba(13, 16, 21, 0.08);
+}
+
+.Progress-bar-percentage {
+  position: relative;
+  height: 100%;
+}
+
+.Content-Scroll {
+  display: flex;
+  overflow-x: auto;
+}
+
+/*------------------------------ Home-Know Your Faculity ---------------------------- */
+.Faculity-img {
+  width: 170px;
+  height: 130px;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
+/*------------------------------ SelectionCarousal ---------------------------- */
+
+.SelectionCarousal {
+  width: 320px;
+  height: 180px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  margin-right: 10%;
+}
+
+/*---------------------------------------------- Subject --------------------------------------------- */
+.Subject-Menu {
+  position: relative;
+  overflow-y: auto;
+  margin-top: 8%;
+  height: 84vh;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+
+
+.Chapter-Name {
+  color: var(--Form-heading2);
+  font-family: Lato;
+  font-size: var(--Form-heading5-font-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Subject-subtitle {
+  color: var(--ChaptePageButtons-color);
+  font-family: Lato;
+  font-size: var(--Form-heading4-font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Lecture-name {
+  color: var(--Form-heading2);
+  font-family: Lato;
+  font-size: var(--Form-heading3-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.Lecture-names {
+  color: var(--Form-heading1);
+  font-family: Lato;
+  font-size: var(--Form-heading2-font-size);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.Subject-Name {
+  color: var(--Form-heading2);
+  font-size: 24px;
+  width: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Subject-img {
+  width: 208px;
+  height: 108px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.Subject-img-time-box {
+  border-radius: 4px;
+  background-color: rgba(13, 16, 21, 0.66);
+  padding: 2%;
+}
+
+.Subject-img-time {
+  color: var(--second-primary-color);
+  ;
+  font-family: Lato;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.Floating-Subject-Menu-But {
+  width: 114px;
+  height: 48px;
+  flex-shrink: 0;
+  background: var(--Form-heading1);
+}
+  .Floating-class{
+    position: fixed;
+  bottom: 24px;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 3;
+  border-radius: 140px;
+}
+
+.Floating-Subject-Menu-Content{
+  width: 314px;
+  height: 433px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background-color: var(--second-primary-color);
+}
+
+.Floating-Subject-Menu-Text {
+  color: var(--second-primary-color);
+  font-family: Lato;
+  font-size: var(--Form-heading2-font-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-2 {
+  position: fixed;
+  width: 100vw;
+  height: 110vh;
+  margin-top: -7%;
+  z-index: 2;
+  background: #0D10156E;
+}
+
+.IsPhoneAndTab{
+  display: none;
+}
 /*----------------------------------------------------Utility--------------------------------------------------- */
 
 .pseudo-button {
@@ -307,4 +616,107 @@ input[type=number] {
   color: var(--error-color);
   display: flex;
   align-items: center;
+}
+
+.main-grid-container {
+  display: grid;
+  grid-template-areas:
+    'sidebar content';
+  grid-template-columns: 300px auto;
+  grid-column-gap: 10px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.menu {
+  grid-area: sidebar;
+  /* overflow-y: auto;
+  height: 100vh; */
+}
+
+.content {
+  grid-area: content;
+}
+
+.main-grid-vertical-container {
+  display: grid;
+  grid-template-areas:
+    'navbar'
+    'main-content';
+  grid-template-rows: 12% auto;
+  /* Use grid-template-rows instead of grid-template-row */
+  grid-row-gap: 10px;
+  width: 100%;
+  height: 81%;
+}
+
+.grid-navbar {
+  grid-area: navbar;
+  z-index: 3;
+}
+
+.grid-content {
+  grid-area: main-content;
+  overflow-y: auto;
+  /* width: 100vw; */
+  height: 92vh;
+}
+
+.company-logo {
+  position: relative;
+  z-index: 0;
+  width: 50%;
+  margin-top: 28px;
+  margin-left: 20px;
+}
+
+.Home-NavBar-Menu-Rotate {
+  animation-name: rotate;
+  animation-duration: 4s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+
+/*----------------------------------Custom ScrollBar Styling -----------------------*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  top: -222px;
+  left: 477px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /*box-shadow: inset 0 0 5px grey; */
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #E6E7E9;
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c7cbd1;
+}
+
+/*---------------------------------------------- Subject --------------------------------------------- */
+
+.Subject-Content {
+  height: 88vh;
 }

@@ -1,4 +1,14 @@
-import {FiAlertCircle} from 'react-icons/fi'
+import {FiHelpCircle, FiHome, FiUser} from 'react-icons/fi'
+import {BiMessageAltCheck,} from 'react-icons/bi'
+import {PiStudentBold} from 'react-icons/pi'
+import {GoBook} from 'react-icons/go'
+import { FRONTEND_URLS } from '../Routes/Routes'
+import CompanyLogo from '../Images/Logo/logo.png'
+import Image from '../Images/DefaultImage/video_default_thumb.png'
+import VidBut from '../Images/VideoPlay/play button.png'
+
+
+
 
 
 //------------------------------------- country_code  ---------------------------------- //
@@ -76,6 +86,8 @@ export const RegisterPageConstantLines = {
 export const ICONS = {
 }
 
+export const ICON_SIZE = 35
+
 //---------------------------------------------- Button-colors---------------------------------- //
 export const ButtonColors = [
   {
@@ -99,3 +111,22 @@ export const ButtonColors = [
     "BorderColor": '#E1F9E3',
   },
 ]
+
+
+//---------------------------------------------- Home-Menu-List ---------------------------------- //
+const ICON_Size = 22
+
+export const HomeMenuList = [
+  [ <FiHome size={ICON_Size}/>, 'Home', FRONTEND_URLS.HOME_ROUTE],
+  [<FiUser size={ICON_Size} />, 'My Account', FRONTEND_URLS.MY_ACCOUNT],
+  [<GoBook size={ICON_Size}  />,'Courses', FRONTEND_URLS.COURSES ],
+  [ <PiStudentBold size={ICON_Size}  />,'Mentorship', FRONTEND_URLS.MENTORSHIP ],
+  [<BiMessageAltCheck size={ICON_Size} />,'Doubut Solve', FRONTEND_URLS.DOUBUT_SOLVE ],
+  [<FiHelpCircle size={ICON_Size}  />, "Help And Support", FRONTEND_URLS.HELP_AND_SUPPORT ],
+]
+
+
+//---------------------------------------------- Company-Logo ---------------------------------- //
+export const logo = CompanyLogo
+export const DefaultImage = Image
+export const PlayButton = VidBut

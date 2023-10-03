@@ -22,11 +22,11 @@
         margin: 4% 0% 0% 8%;
         /* margin-left: 8%; */
     }
- 
+
 
     .Form {
         margin-left: 0%;
-        height: 78vh;
+        height: 76vh;
     }
 
     .Form-text-input {
@@ -36,7 +36,8 @@
     .Form-phone {
         /* justify-content: space-around; */
     }
-    .Form-input{
+
+    .Form-input {
         width: 100%;
     }
 
@@ -44,12 +45,89 @@
         width: 78%;
         height: 3%;
     }
-/*---------------------------------------------------- Attempt-Year --------------------------------------------------- */
-    .Form-lottie{
+
+    /*---------------------------------------------------- Attempt-Year --------------------------------------------------- */
+    .Form-lottie {
         width: 84vw;
     }
 
-    .grid-container{
+    .grid-container {
         height: 17%;
     }
+
+
+
+    /*----------------------------------------------------Home--------------------------------------------------- */
+
+    .Home-NavBar-Menu {
+        display: block;
+        transform: scaleX(-1);
+    }
+    
+    .Home-Menu {
+        position: fixed;
+        z-index: 1;
+        height: 101vh;
+        margin-top: -9%;
+        background-color: var(--second-primary-color);
+        width: 300px;
+    }
+        
+    .Home-NavBar>.menu{
+        display: block;
+    }
+
+/*----------------------------------------------------Subject--------------------------------------------------- */
+.Subject-Content {
+    height: 100vh;
+}
+
+.Subject-Menu {
+        margin-top: 0%;
+        height: 100%;
+    }
+
+    .IsPhoneAndTab{
+        display: block;
+    }
+    
+    /*----------------------------------------------------Utility--------------------------------------------------- */
+
+    .overlay{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        margin-top: -7%;
+        z-index: 0;
+        background: #0D10156E;
+    }
+    .menu {
+        display: none;
+    }
+
+    .main-grid-container {
+        grid-template-columns: 0px auto;
+        grid-column-gap: 0px;
+    }
+
+    .main-grid-vertical-container {
+        display: grid;
+        grid-template-areas:
+            'navbar'
+            'main-content';
+        grid-template-rows: 10% auto;
+        /* Use grid-template-rows instead of grid-template-row */
+        grid-row-gap: 0px;
+        width: 100%;
+        height: 72%;
+    }
+
+    .grid-navbar {
+        grid-area: navbar;
+    }
+
+    .grid-content {
+        grid-area: main-content;
+    }
+
 }

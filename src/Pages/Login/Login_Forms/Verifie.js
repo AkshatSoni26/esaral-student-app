@@ -119,7 +119,7 @@ const Verifie = () => {
         const is_course_assigned = response.data.data.is_course_assigned;
         localStorage.setItem('access', access)
 
-        if (is_course_assigned !== false) {
+        if (is_course_assigned === false) {
           navigate(FRONTEND_URLS.REGISTER_ROUTE + '/name')
         }
         else {
