@@ -3,11 +3,11 @@ import { createRipple } from './Functions/ButtonRippleFun';
 import './Button.css'
 
 
-const SecondaryButton = ({ ButName, ButFun }) => {
+const TraniaryButton = ({ ButName, ButFun, style }) => {
 
     return (
         <div>
-            <div className='CommonFlexHorizontalClass Primary-Button Secondary-Button' onClick={(e) => {
+            <div className='CommonFlexHorizontalClass Primary-Button Traniary-Button' style={style} onClick={(e) => {
                 createRipple({event:e, className:"ripple-secondary"});
                 ButFun();
             }}>
@@ -17,10 +17,10 @@ const SecondaryButton = ({ ButName, ButFun }) => {
     );
 };
 
-export default SecondaryButton;
+export default TraniaryButton;
 
-SecondaryButton.defaultProps = {
-    ButName: "SecondaryButton",
+TraniaryButton.defaultProps = {
+    ButName: "TraniaryButton",
     ButFun: () => {
         console.log("secondary button clicked.")
     },

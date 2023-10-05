@@ -1,7 +1,7 @@
 /*------------------------------------------------------Tab View------------------------------------------------------*/
 
 @media screen and (min-width: 481px) and (max-width: 720px) {
-    
+
     /*------------------------------------------------Login-----------------------------------------------*/
     .login {
         background-color: var(--second-primary-color);
@@ -9,7 +9,8 @@
         grid-template: 'side content';
         grid-template-columns: 0% 100%;
     }
-    .login-caursal{
+
+    .login-caursal {
         display: none;
     }
 
@@ -17,26 +18,27 @@
         width: 84vw;
         height: 100vh;
         grid-area: content;
-        margin:0%
+        margin: 0%
     }
 
     .Form-phone {
         margin: 10% 0% 8% 0%;
     }
 
-/*---------------------------------------------------- Attempt-Year --------------------------------------------------- */
+    /*---------------------------------------------------- Attempt-Year --------------------------------------------------- */
     .Form-lottie {
         margin-top: -12%;
         width: 48vw;
         height: 36vh;
     }
-    .Attempt-year-Form{
+
+    .Attempt-year-Form {
         height: 80%;
     }
 
-/*----------------------------------------------------Home--------------------------------------------------- */
+    /*----------------------------------------------------Home--------------------------------------------------- */
 
-    .Home-NavBar-Menu{
+    .Home-NavBar-Menu {
         display: block;
         transform: scaleX(-1)
     }
@@ -49,15 +51,59 @@
         background-color: var(--second-primary-color);
         width: 300px;
     }
+
     /* .main-grid-vertical-container{
         height: 71%;
     } */
 
-    .Home-NavBar>.menu{
+    .Home-NavBar>.menu {
         display: block;
     }
 
-/*----------------------------------------------------Subject--------------------------------------------------- */
+    .Home-content {
+        background-color: var(--Primary-Background-Color);
+    }
+
+    /*----------------------------------------------------My-Account--------------------------------------------------- */
+
+    .MyAccountContent {
+        height: 90vh;
+        justify-content: space-evenly;
+    }
+
+    /* .My-Account-Card {
+        background-color: var(--second-primary-color);
+    } */
+
+    /* .Card-Style {
+        /* margin-top: 4%; */
+        /* height: 40%;
+        width: 100%;
+        background-color: var(--second-primary-color);
+        overflow-y: auto;
+    } */ 
+
+    .Inner-Card-style {
+        /* display: flex; */
+        /* align-items: center; */
+        background-color: var(--Primary-Background-Color);
+        /* margin: 0% 12%;
+        padding: 0% 4%; */
+        border-radius: 16px;
+    }
+
+    /* .Inner-Card-Text {
+        margin: 0% 12%;
+        padding: 4% 0% 2% 0%;
+        display: flex;
+    } */
+
+    .Logout-height {
+        height: 8vh;
+      }
+
+
+    /*----------------------------------------------------Subject--------------------------------------------------- */
 
     .Subject-Content {
         height: 92vh;
@@ -68,38 +114,41 @@
         height: 100%;
     }
 
-    .IsPhoneAndTab{
+    .IsPhoneAndTab {
         display: block;
     }
-/*----------------------------------------------------Utility--------------------------------------------------- */
-.menu{
-    display: none;
-}
-.main-grid-container {
-    grid-template-columns: 0px auto;
-    grid-column-gap: 0px;
-}
+
+    /*----------------------------------------------------Utility--------------------------------------------------- */
+    .menu {
+        display: none;
+    }
+
+    .main-grid-container {
+        grid-template-columns: 0px auto;
+        grid-column-gap: 0px;
+    }
 
     .main-grid-vertical-container {
         display: grid;
         grid-template-areas:
-          'navbar'
-          'main-content';
-        grid-template-rows: 10% auto; /* Use grid-template-rows instead of grid-template-row */
+            'navbar'
+            'main-content';
+        grid-template-rows: 10% auto;
+        /* Use grid-template-rows instead of grid-template-row */
         grid-row-gap: 0px;
         width: 100%;
         height: 84%;
-      }
-      
-      .grid-navbar {
+    }
+
+    .grid-navbar {
         grid-area: navbar;
-      }
-      
-      .grid-content {
+    }
+
+    .grid-content {
         grid-area: main-content;
-      }
-      
-      .overlay{
+    }
+
+    .overlay {
         position: fixed;
         width: 100vw;
         height: 105vh;

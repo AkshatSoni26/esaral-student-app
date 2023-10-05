@@ -13,10 +13,10 @@ const Name = ({}) => {
 
     const [warn, setWarn] = useState(false)
     const [name, setName] = useState('')
-    const format = /^[A-Za-z\u0900-\u097F][A-Za-z\u0900-\u097F\s]*$/;
     const navigate = useNavigate()
-
-    function InputChecker() {
+    const format = /^[A-Za-z\u0900-\u097F][A-Za-z\u0900-\u097F\s]*$/;
+    
+    function InputChecker(name) {
         if (name.length > 0 && format.test(name)) {
             setWarn(false)
         }

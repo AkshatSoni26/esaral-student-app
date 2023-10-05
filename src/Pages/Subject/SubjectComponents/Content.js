@@ -16,7 +16,7 @@ const Content = ({ data }) => {
                 (data).map(
                     (chapter, id) => {
                         return (
-                            <div key={id} id={chapter.node_id} className='Home-content' style={{
+                            <div key={id} id={chapter.node_id} className=' divider' style={{
                                 marginTop: "10px",
                                 marginBottom: "10px",
                                 display: "flex",

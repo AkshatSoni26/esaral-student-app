@@ -43,6 +43,12 @@
     border: 2px solid var(--Primary-but-color);
 }
 
+.Traniary-Button{
+    background-color: #fff;
+    color: var(--error-color);
+    border: 2px solid var(--error-color);
+}
+
 span.ripple-secondary {
     position: absolute;
     /* The absolute position we mentioned earlier */

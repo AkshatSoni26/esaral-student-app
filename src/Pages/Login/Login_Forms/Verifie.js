@@ -41,6 +41,7 @@ const Verifie = () => {
         })
         .catch((error) => {
           console.log(error.message);
+          alert("Network Error")
         });
     }
 

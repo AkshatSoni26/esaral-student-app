@@ -1,4 +1,4 @@
-export function createRipple(event, ButFun) {
+export function createRipple({event,  className}) {
     const button = event.currentTarget;
 
     const circle = document.createElement("span");
@@ -8,7 +8,7 @@ export function createRipple(event, ButFun) {
     circle.style.width = circle.style.height = `${diameter}px`;
     circle.style.left = `${event.clientX - button.offsetLeft - radius}px`;
     circle.style.top = `${event.clientY - button.offsetTop - radius}px`;
-    circle.classList.add("ripple-primary");
+    circle.classList.add(className);
 
     const ripple = button.getElementsByClassName("ripple")[0];
 
@@ -18,5 +18,5 @@ export function createRipple(event, ButFun) {
 
     button.appendChild(circle);
 
-    ButFun && ButFun()
+    // ButFun && ButFun()
 }

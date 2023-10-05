@@ -10,23 +10,25 @@ const HomeContent = () => {
             {
                 USER ?
                     <>
-                        <div className='Home-Name-Part common-margin'>
-                            <div className='Home-Name' >Hi, {USER.user.full_name} 👋</div>
-                            <div className='Home-Name-subtitle'> Let’s start your prepration here. </div>
-                        </div>
+                        <div className='divider'>
+                            <div className='Home-Name-Part common-margin'>
+                                <div className='Home-Name' >Hi, {USER.user.full_name} 👋</div>
+                                <div className='Home-Name-subtitle'> Let’s start your prepration here. </div>
+                            </div>
 
-                        <div className='common-margin' style={{
+                            <div className='common-margin' style={{
                                 marginRight: "5px",
-                        }}>
-                            <SubjectButtons subjects={USER.subjects} />
+                            }}>
+                                <SubjectButtons subjects={USER.subjects} />
+                            </div>
                         </div>
 
-                        <div>
+                        <div className='divider'>
                             <div className='Home-Name common-margin'> Know Your Faculty </div>
                             <FaculityCarusal faculties={USER.faculties} />
                         </div>
 
-                        <div>
+                        <div className='divider'>
                             <div className='Home-Name common-margin'> Selections </div>
                             <SelectionCarousal selections={USER.selection} />
                         </div>

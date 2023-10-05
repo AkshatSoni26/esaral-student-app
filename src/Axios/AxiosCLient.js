@@ -33,7 +33,8 @@ AxiosClient.interceptors.response.use(
       window.location.reload(true);
     } else {
       // Handle other response errors
-      console.error("Request error:", error);
+      // console.error("Request error:", error);
+      alert(error.message)
     }
     // return Promise.reject(error);
   }

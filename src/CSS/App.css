@@ -18,6 +18,8 @@
   --Form-heading1: #0D1015;
   --Form-heading2: #0D1015;
   --Form-heading3: #333A47;
+  --green-color: #008445;
+  --green-background-color: #D9F6E8;
 
 
   --warning-font-color: #CC2C2C;
@@ -358,9 +360,11 @@ input[type=number] {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  box-shadow: 0px 4px 4px 0px rgba(51, 58, 71, 0.04);
 }
 
-.Home-content,
+/* .Home-content, */
 .Home-menu,
 .Home-NavBar {
   background-color: var(--second-primary-color);
@@ -390,6 +394,15 @@ input[type=number] {
   letter-spacing: 0em;
   text-align: left;
   color: var(--Form-heading3)
+}
+
+.Home-NavBar-Name {
+  color: var(--ChaptePageButtons-color);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 /*------------------------------ HomeSubjectButtons ---------------------------- */
@@ -467,6 +480,126 @@ input[type=number] {
   height: 130px;
   flex-shrink: 0;
   border-radius: 10px;
+}
+
+/*----------------------------------------------------My-Account--------------------------------------------------- */
+.My-Account-Name {
+  color: var(--Form-heading1);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.My-Account-Number {
+  color: var(--Form-heading1);
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.My-Account-But {
+  display: flex;
+  color: var(--primary-color);
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-items: center;
+}
+
+.MyAccountContent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* .My-Account-Card {
+      background-color: var(--second-primary-color);
+  } */
+
+.Card-Style {
+  margin-top: 2%;
+  height: 35vh;
+  width: 100%;
+  background-color: var(--second-primary-color);
+  overflow-y: auto;
+}
+
+.Inner-Card-style {
+  display: flex;
+  background-color: var(--Primary-Background-Color);
+  margin-left: 20px;
+  /* margin-top: 20px; */
+  padding-left: 4%;
+  height: 100px;
+  width: 200px;
+  border-radius: 16px;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.Inner-Card-Text {
+  margin-left: 20px;
+  /* margin-top: 20px; */
+  padding: 2% 0%;
+  display: flex;
+  align-items: center;
+
+  color: var(--ChaptePageButtons-color);
+  font-family: Lato;
+  font-size: var(--Form-heading2-font-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Enrolled {
+  color: var(--green-color);
+  border-radius: 80px;
+  background: var(--green-background-color);
+  font-family: Lato;
+  font-size: var(--Form-heading4-font-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 1% 5%;
+}
+
+/* .Card-title {
+  color: var(--ChaptePageButtons-color);
+  font-family: Lato;
+  font-size: var(--Form-heading2-font-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+} */
+
+.Log-out {
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--error-color);
+  font-family: Lato;
+  font-size: var(--Form-heading2-font-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+.Logout-height {
+  height: 8vh;
 }
 
 /*------------------------------ SelectionCarousal ---------------------------- */
@@ -565,8 +698,9 @@ input[type=number] {
   flex-shrink: 0;
   background: var(--Form-heading1);
 }
-  .Floating-class{
-    position: fixed;
+
+.Floating-class {
+  position: fixed;
   bottom: 24px;
   right: 50%;
   transform: translateX(50%);
@@ -574,7 +708,7 @@ input[type=number] {
   border-radius: 140px;
 }
 
-.Floating-Subject-Menu-Content{
+.Floating-Subject-Menu-Content {
   width: 314px;
   height: 433px;
   flex-shrink: 0;
@@ -603,14 +737,37 @@ input[type=number] {
   background: #0D10156E;
 }
 
-.IsPhoneAndTab{
+.IsPhoneAndTab {
   display: none;
 }
+
 /*----------------------------------------------------Utility--------------------------------------------------- */
 
 .pseudo-button {
   cursor: pointer;
+  /* position: relative; */
+  /* overflow: hidden; */
+  /* transition: background 400ms; */
 }
+
+.overlay1 {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  /* margin-top: -7%; */
+  z-index: 4;
+  background: #0D10156E;
+}
+
+.ripple-secondary {
+  position: absolute;
+  /* The absolute position we mentioned earlier */
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  background-color: #F3F3F4;
+}
+
 
 .warning {
   color: var(--error-color);
@@ -719,4 +876,65 @@ input[type=number] {
 
 .Subject-Content {
   height: 88vh;
+}
+
+
+/*---------------------------------------------- PopUp --------------------------------------------- */
+.PopUp-modal {
+  position: fixed;
+  width: 288px;
+  height: 228px;
+  background-color: white;
+  z-index: 5;
+  border-radius: 15px;
+}
+
+.PopUp-Contanier {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  z-index: 5;
+  align-items: center;
+  justify-content: center;
+}
+
+.PopUp-Input-Field {
+  border-radius: 8px;
+  border: 1px solid #F3F3F4;
+  background: linear-gradient(0deg, #F8F8F8 0%, #F8F8F8 100%), #FFF;
+  /* background-color: #008445; */
+  font-size: var(--Form-heading2-font-size);
+  width: 100%;
+  height: 40px;
+  flex-shrink: 0;
+  padding-left: 6px;
+}
+
+.PopUp-Input-Field:focus {
+  outline: none;
+  border: 1px solid var(--primary-color);
+}
+
+.PopUp-Input-Field-label {
+  color: var(--ChaptePageButtons-color);
+  font-family: Lato;
+  font-size: var(--Form-heading3-font-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Pop-Box-Second-Contanier {
+  height: 86%;
+  padding: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.divider {
+  background-color: var(--second-primary-color);
+  padding-top: 1%;
+  margin-bottom: 1%;
 }

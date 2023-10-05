@@ -5,8 +5,10 @@ import Menu from './Menu';
 import { ICON_SIZE } from '../../../Components/Services';
 
 
-const HomeNavbar = () => {
+const HomeNavbar = ({ Name }) => {
+    console.log("HomeNavbar")
     const [isMenu, setIsMenu] = useState(false)
+    console.log("Name",Name,)
     return (
         <div className='Home-NavBar'>
             {isMenu &&
@@ -16,13 +18,24 @@ const HomeNavbar = () => {
                 </div>
             }
             <div>
-                {!isMenu && <div className={`Home-NavBar-Menu pseudo-button ${isMenu && 'Home-NavBar-Menu-Rotate'}`} style={{
-                    marginLeft: '20px',
-                }} onClick={() => {
-                    setIsMenu(true)
-                }}>
-                    <TbMenuDeep size={30} />
-                </div>}
+                {!isMenu &&
+                    <div style={{
+                        display: "flex",
+                        alignItems: "stretch",
+                    }}>
+                        <div className={`Home-NavBar-Menu pseudo-button ${isMenu && 'Home-NavBar-Menu-Rotate'}`} style={{
+                            marginLeft: '20px',
+                        }} onClick={() => {
+                            setIsMenu(true)
+                        }}>
+                            <TbMenuDeep size={25} color='#3E3A4C'/>
+                        </div>
+                        &nbsp;&nbsp;
+                         <div className='Home-NavBar-Name IsPhoneAndTab'>
+                         { Name !== 'Home' ? Name : 'JEE (12th)'}
+                        </div>
+                    </div>
+                }
             </div>
             <div>
                 <FiSearch size={ICON_SIZE} />
