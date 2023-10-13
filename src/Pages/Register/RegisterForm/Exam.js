@@ -9,7 +9,7 @@ import { UserData } from '../../../Functions/Functions';
 
 const Exam = () => {
     console.log("Exam")
-    const { name, targets } = useLocation().state
+    const { name, targets } = useLocation()?.state
     const navigate = useNavigate()
 
     function EnrollStudent(id) {

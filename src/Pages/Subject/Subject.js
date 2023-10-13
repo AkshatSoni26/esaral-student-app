@@ -41,9 +41,8 @@ const Subject = () => {
         }, []
     )
     return (
-        <>
+        <div className="container-xxl">
             <div className='main-grid-container Home'>
-
                 {
                     data
                         ?
@@ -94,7 +93,7 @@ const Subject = () => {
                         </>
                 }
             </div>
-        </>
+        </div>
     );
 };
 

@@ -1,8 +1,12 @@
 /*------------------------------------------------------CSS Reset---------------------------------------------------- */
-* {
-  margin: 0;
-  padding: 0;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    /* height: 100vh;
+    width: 100vw; */
+    /* max-width: 1360px; */
+
+  }
 
 
 /*------------------------------------------------------CSS Variables---------------------------------------------------- */
@@ -38,15 +42,15 @@ body {
   font-family: var(--Primary-Font-Family);
   background-color: var(--Primary-Background-Color);
   height: 100%;
-  width: 100%;
+  width: 100%; 
   user-select: none;
 }
 
-img {
+/* img {
   user-drag: none;
   -moz-user-drag: none;
   -webkit-user-drag: none;
-}
+} */
 
 /*-------------------------------------------------------Grid Template------------------------------------------------*/
 .grid-container {
@@ -781,7 +785,7 @@ input[type=number] {
     'sidebar content';
   grid-template-columns: 300px auto;
   grid-column-gap: 10px;
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   overflow: hidden;
 }

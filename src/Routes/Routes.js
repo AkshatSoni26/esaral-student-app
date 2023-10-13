@@ -42,4 +42,3 @@ export const FRONTEND_URLS = {
     TEST_ROOT: `${start_var}test/`,
     TEST_INSTRUCTIONS: `${start_var}test/:quizId/instructions`
 }
-

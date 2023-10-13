@@ -19,52 +19,54 @@ const Home = () => {
     const isOverlay = useSelector(state => state.app?.isOverlay)
 
     return (
-        <div className='main-grid-container Home'>
-            {isOverlay &&
-                <>
-                    <PopUp />
-                    <div className='overlay1'></div>
-                </>
-            }
+        <div className="container-xxl">
+            <div className='main-grid-container Home'>
+                {isOverlay &&
+                    <>
+                        <PopUp />
+                        <div className='overlay1'></div>
+                    </>
+                }
 
-            <div className='menu Home-menu'>
-                <Menu />
-            </div>
-
-            <div className='content main-grid-vertical-container'>
-
-                <div className='grid-navbar Home-NavBar'>
-                    <HomeNavbar Name={ConditionForContentRedring} />
+                <div className='menu Home-menu'>
+                    <Menu />
                 </div>
 
-                <div className='grid-content Home-content'>
-                    {
-                        HomeMenuList[1][1] == ConditionForContentRedring
-                            ?
-                            <MyAccountContent />
-                            :
-                            HomeMenuList[2][1] == ConditionForContentRedring
+                <div className='content main-grid-vertical-container'>
+
+                    <div className='grid-navbar Home-NavBar'>
+                        <HomeNavbar Name={ConditionForContentRedring} />
+                    </div>
+
+                    <div className='grid-content Home-content'>
+                        {
+                            HomeMenuList[1][1] == ConditionForContentRedring
                                 ?
-                                <CoursesContent />
+                                <MyAccountContent />
                                 :
-                                HomeMenuList[3][1] == ConditionForContentRedring
+                                HomeMenuList[2][1] == ConditionForContentRedring
                                     ?
-                                    <MentorshipContent />
+                                    <CoursesContent />
                                     :
-                                    HomeMenuList[4][1] == ConditionForContentRedring
+                                    HomeMenuList[3][1] == ConditionForContentRedring
                                         ?
-                                        <DoubutSolveContent />
+                                        <MentorshipContent />
                                         :
-                                        HomeMenuList[5][1] == ConditionForContentRedring
+                                        HomeMenuList[4][1] == ConditionForContentRedring
                                             ?
-                                            <HelpAndSupportContent />
+                                            <DoubutSolveContent />
                                             :
-                                            <HomeContent />
+                                            HomeMenuList[5][1] == ConditionForContentRedring
+                                                ?
+                                                <HelpAndSupportContent />
+                                                :
+                                                <HomeContent />
 
-                    }
+                        }
+                    </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

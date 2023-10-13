@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ButtonColors, RegisterPageConstantLines } from '../../../Components/Services';
 import { useLocation, useNavigate } from 'react-router-dom';
-import LottieImage from '../../../Components/LottieImage/LottieImage';
+// import LottieImage from '../../../Components/LottieImage/LottieImage';
 import pencil from '../../../Images/LottieImages/pencil-animation.json'
 import { BACKEND_URLS, FRONTEND_URLS } from '../../../Routes/Routes';
 import { AxiosClient } from '../../../Axios/AxiosCLient';
@@ -63,7 +63,7 @@ const AttemptYear = () => {
                                                 background: ButtonColors[key].BorderColor
                                             }}
                                             onClick={() => {
-                                                navigate(FRONTEND_URLS.REGISTER_ROUTE + '/' +'exam', {state: {targets:item.targets, name:state}})
+                                                navigate(FRONTEND_URLs.REGISTER_ROUTE + '/' +'exam', {state: {targets:item.targets, name:state}})
                                             }}>
                                                 {item.class_name}
                                             </div>
